@@ -22,8 +22,11 @@ header {
   min-height: 100vh;
   border-right: solid black var(--border);
   width: 30vw;
+  height: 100vh;
   display: flex;
-  align-items: space-between;
+  flex-direction: column;
+  padding: .5vw;
+  row-gap: .5vw;
 }
 
 main {
@@ -31,10 +34,6 @@ main {
   top: 0;
   right: 0;
   width: 70vw;
-}
-
-nav {
-  padding: .5vw;
 }
 
 section {
@@ -79,11 +78,9 @@ img {
   }
   header {
     width: 36vw;
+    padding: 1vw;
   }
   main {
     width: 64vw;
-  }
-  nav {
-    padding: 1vw;
   }
 }
