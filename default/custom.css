@@ -49,6 +49,11 @@ section:not(:last-child) {
   border-bottom: solid black var(--border);
 }
 
+.container {
+  height: 100vh;
+  padding: 20vw;
+}
+
 ol {
    list-style: none;
    counter-reset: item;
@@ -73,6 +78,12 @@ li:before {
 
 li:hover {
   opacity: .5;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 @media (max-width: 888px) {
