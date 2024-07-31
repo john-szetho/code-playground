@@ -14,15 +14,18 @@ Here is a list with some instructions:
 7. SVG elements
 8. ??
 
-Try and follow along as much as you can and don't be afraid to experiment or break any code... you can always fork a new project 😈
+Try and follow along as much as you can and don't be afraid to experiment or break any code... you can always fork (aka. remix) a new project.
 
-This playground contains a selection of placeholder images which you can find in the `assets` folder to the left, but feel welcome to upload your own to use.
+There is a selection of placeholder images in the `assets` folder to the left but you are welcome to upload and use your own.
 
-#### What's in this project?
+🔮🔮🔮
 
-← `README.md`: That's this file, where you can tell people what your cool website does and how you built it.
+“The goal should not be to program something amazingly complex but to develop effective design with simple means”
 
-← `index.html`: This is the main HTML page for your site.
+
+#### Files
+
+← `index.html`: This is the main HTML page for your website.
 
 ← `style.css`: CSS files add styling rules to your content.
 
