@@ -1,0 +1,14 @@
+header {
+  position: fixed;
+  background
+}
+
+section {
+  background-color: lightgrey;
+  width: 100%;
+  min-height: 100vh;
+}
+
+section:nth-child(2n) {
+  background-color: grey;
+}
