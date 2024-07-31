@@ -1,7 +1,7 @@
-#### Hello student,
+Hello,
 
-This is your code playground for today.
-In this workshop, we will be exploring a few simple coding tricks :D
+Welcome to your code playground.
+In this workshop, we will be exploring a few simple coding tricks.
 
 Here is a list with some instructions:
 
