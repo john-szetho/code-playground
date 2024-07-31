@@ -6,8 +6,8 @@
    counter-increment: item;
  }
  li:before {
-   margin-right: 1vw;
-   content: ')' counter(item) ')';
+   margin-right: .8em;
+   content: '(' counter(item) ')';
    border-radius: 100%;
 /*    border: white dashed;
    color: white;

@@ -3,34 +3,40 @@ html {
 }
 
 body {
-  color: white;
+  color: black;
   font-family: 'Arial Narrow';
   line-height: 108%;
   font-size: 1.2vw;
+  display: flex;
 }
 
 header {
-  position: fixed;
-  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 30vw;
+}
+
+main {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 70vw;
 }
 
 nav {
-  padding: 2vw;
-}
-
-ol {
-  background-color: black;
+  padding: 1vw;
 }
 
 section {
-  background-color: lightgrey;
-  width: 100%;
+/*   background-color: lightgrey; */
   min-height: 100vh;
+  border-left: 
 }
 
-section:nth-child(2n) {
+/* section:nth-child(2n) {
   background-color: grey;
-}
+} */
 
 li:hover {
   opacity: .5;
