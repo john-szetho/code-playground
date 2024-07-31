@@ -29,12 +29,13 @@ main {
   top: 0;
   right: 0;
   width: 70vw;
-  scroll-snap-points-y: repeat(calc(100vh + var(--border)));
+  height: 100vh;
+  overflow-y: scroll;
   scroll-snap-type: y mandatory;
 }
 
 nav {
-  padding: 1vw;
+  padding: .5vw;
 }
 
 section {
@@ -85,6 +86,6 @@ li:hover {
     width: 64vw;
   }
   nav {
-    padding: 2vw;
+    padding: 1vw;
   }
 }

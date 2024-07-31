@@ -1,18 +1,18 @@
 -----
 
-Hello students,
+Welcome to your Code Playground.
 
-Welcome to your code playground.
 In this workshop, we will be exploring a few simple coding tricks.
 Here is a list with some instructions:
 
 1. Hover states
-2. Custom cursors
-3. CSS transforms (rotate, filter effects, scale)
+2. 
+3. CSS transforms
 4. Updating classes with Javascript
 5. Keyframe animations
-6. Draggable elements
-7. Media queries
+6. Custom cursors
+7. Draggable elements (third-party script)
+8. Media queries
 
 There is a selection of placeholder images in the `assets` folder to the left, or you can upload and use your own.
 
