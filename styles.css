@@ -12,7 +12,8 @@
 }
 
 .container .box {
-  width: 15vw;
-  height: 15vw;
+  width: 20vw;
+  height: 20vw;
   border: black solid var(--border);
+  padding: .5vw;
 }
