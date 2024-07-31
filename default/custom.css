@@ -1,24 +1,79 @@
 :root {
-  --border: .05vw;
+  --border: .065vw;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  color: black;
+  font-family: 'Arial Narrow';
+  line-height: 108%;
+  font-size: 1.2vw;
+  display: flex;
+}
+
+@media (max-width: 888px) {
+  body {
+    font-size: 1.8vw;
+  }
+  header {
+    width: 40vw;
+  }
+  main: {
+    
+  }
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 30vw;
+}
+
+main {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 70vw;
+}
+
+nav {
+  padding: 1vw;
+}
+
+section {
+  min-height: calc(100vh + var(--border));
+  border-left: solid black var(--border);
+  border-bottom: solid black var(--border);
+  padding-top: calc(var(--border) * -1);
+  margin-top: var(--border);
 }
 
 ol {
    list-style: none;
    counter-reset: item;
  }
- li {
-   counter-increment: item;
- }
- li:before {
-   margin-right: .2em;
-/*    content: '(' counter(item) ')'; */
-   content: counter(item);
-   border-radius: 100%;
-   border: black solid calc(var(--border) / .88);
-   color: black;
-   width: 1.2em;
-   height: 1.2em;
-   text-align: center;
-   display: inline-block;
-   transform: scale(.88);
- }
+
+li {
+ counter-increment: item;
+}
+
+li:before {
+ margin-right: .2em;
+ content: counter(item);
+ border-radius: 100%;
+ border: black solid calc((var(--border) / .88) * 1.12);
+ color: black;
+ width: 1.2em;
+ height: 1.2em;
+ text-align: center;
+ display: inline-block;
+ transform: scale(.88);
+}
+
+li:hover {
+  opacity: .5;
+}
