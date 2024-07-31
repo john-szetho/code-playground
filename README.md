@@ -6,7 +6,7 @@ In this workshop, we will be exploring a few simple coding tricks.
 Here is a list with some instructions:
 
 1. Hover states
-2. 
+2. ???
 3. CSS transforms
 4. Updating classes with Javascript
 5. Keyframe animations
