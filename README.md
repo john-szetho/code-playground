@@ -1,6 +1,17 @@
-# Hello Website (blank)
+# Hello
 
-This is a basic static HTML starter project you can build on however you like. No need to save. While you develop your site, your changes will happen 🪄 immediately in the preview window. You can upload assets like images or audio in `assets` to the left. The rest is up to you and your imagination.
+This is a Code Playground and today we will be exploring a few Simple Tricks :D
+
+1. Hover states
+2. Custom cursors
+3. CSS transforms (rotate, filter effects, scale)
+4. Updating classes with Javascript
+5. Keyframe animations
+6. Draggable elements
+7. SVG elements
+8. ???
+
+This playground contains a placeholder images which you can find in the `assets` folder to the left, but feel welcome to upload your own to use.
 
 ## What's in this project?
 
