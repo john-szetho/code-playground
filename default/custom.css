@@ -29,9 +29,6 @@ main {
   top: 0;
   right: 0;
   width: 70vw;
-  height: 100vh;
-  overflow-y: scroll;
-  scroll-snap-type: y mandatory;
 }
 
 nav {
@@ -39,19 +36,7 @@ nav {
 }
 
 section {
-  min-height: calc(100vh + var(--border));
-  padding-top: calc(var(--border) * -1);
-  margin-top: var(--border);
-  scroll-snap-align: start;
-}
-
-section:not(:last-child) {
-  border-bottom: solid black var(--border);
-}
-
-.container {
-  height: 100vh;
-  padding: 20vw;
+  min-height: 100vh;
 }
 
 ol {
