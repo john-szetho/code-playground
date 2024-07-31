@@ -1,4 +1,8 @@
- ol {
+:root {
+  --border: .05vw;
+}
+
+ol {
    list-style: none;
    counter-reset: item;
  }
@@ -6,12 +10,15 @@
    counter-increment: item;
  }
  li:before {
-   margin-right: .8em;
-   content: '(' counter(item) ')';
+   margin-right: .2em;
+/*    content: '(' counter(item) ')'; */
+   content: counter(item);
    border-radius: 100%;
-/*    border: white dashed;
-   color: white;
-   width: 1.2em; */
+   border: black solid calc(var(--border) / .88);
+   color: black;
+   width: 1.2em;
+   height: 1.2em;
    text-align: center;
    display: inline-block;
+   transform: scale(.88);
  }
