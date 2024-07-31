@@ -12,8 +12,7 @@ Here is a list with some instructions:
 4. Updating classes with Javascript
 5. Keyframe animations
 6. Draggable elements
-7. SVG elements
-8. ??
+7. Media queries
 
 There is a selection of placeholder images in the `assets` folder to the left, or you can upload and use your own.
 

@@ -7,11 +7,11 @@
  }
  li:before {
    margin-right: 1vw;
-   content: counter(item);
+   content: ')' counter(item) ')';
    border-radius: 100%;
-   border: white .2vw solid;
+/*    border: white dashed;
    color: white;
-   width: 1.2em;
+   width: 1.2em; */
    text-align: center;
    display: inline-block;
  }

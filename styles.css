@@ -1,6 +1,12 @@
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   color: white;
   font-family: 'Arial Narrow';
+  line-height: 108%;
+  font-size: 1.2vw;
 }
 
 header {
@@ -16,14 +22,6 @@ ol {
   background-color: black;
 }
 
-li {
-  padding: 1vw 1vw 0 1vw;
-}
-
-li:last-child {
-  padding-bottom: 1vw;
-}
-
 section {
   background-color: lightgrey;
   width: 100%;
@@ -35,5 +33,5 @@ section:nth-child(2n) {
 }
 
 li:hover {
-  opacity: .25;
+  opacity: .5;
 }
