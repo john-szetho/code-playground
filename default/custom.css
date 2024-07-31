@@ -1,0 +1,17 @@
+ ol {
+   list-style: none;
+   counter-reset: item;
+ }
+ li {
+   counter-increment: item;
+ }
+ li:before {
+   margin-right: 1vw;
+   content: counter(item);
+   border-radius: 100%;
+   border: white .2vw solid;
+   color: white;
+   width: 1.2em;
+   text-align: center;
+   display: inline-block;
+ }

@@ -1,6 +1,27 @@
+body {
+  color: white;
+  font-family: 'Arial Narrow';
+}
+
 header {
   position: fixed;
-  background
+  width: 100%;
+}
+
+nav {
+  padding: 2vw;
+}
+
+ol {
+  background-color: black;
+}
+
+li {
+  padding: 1vw 1vw 0 1vw;
+}
+
+li:last-child {
+  padding-bottom: 1vw;
 }
 
 section {
@@ -11,4 +32,8 @@ section {
 
 section:nth-child(2n) {
   background-color: grey;
+}
+
+li:hover {
+  opacity: .25;
 }
