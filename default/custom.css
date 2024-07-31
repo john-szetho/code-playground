@@ -14,18 +14,6 @@ body {
   display: flex;
 }
 
-@media (max-width: 888px) {
-  body {
-    font-size: 1.8vw;
-  }
-  header {
-    width: 40vw;
-  }
-  main: {
-    
-  }
-}
-
 header {
   position: fixed;
   top: 0;
@@ -76,4 +64,19 @@ li:before {
 
 li:hover {
   opacity: .5;
+}
+
+@media (max-width: 888px) {
+  body {
+    font-size: 2.2vw;
+  }
+  header {
+    width: 36vw;
+  }
+  main {
+    width: 64vw;
+  }
+  nav {
+    padding: 2vw;
+  }
 }
