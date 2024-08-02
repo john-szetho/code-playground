@@ -1,6 +1,6 @@
 :root {
   --border: .065vw;
-  --base: 1.8vw;
+  --base: 1.5vw;
   --padding: 1vw;
 }
 
@@ -111,10 +111,7 @@ img {
 @media (max-width: 888px) {
   :root {
     --padding: 2vw;
-  }
-  
-  body {
-    font-size: 2.2vw;
+    --base: 2vw;
   }
   header {
     width: 36vw;
