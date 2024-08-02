@@ -1,5 +1,7 @@
 :root {
   --border: .065vw;
+  --base: 2vw;
+  --padding: 1vw;
 }
 
 html {
@@ -10,7 +12,7 @@ body {
   color: black;
   font-family: 'Arial Narrow';
   line-height: 108%;
-  font-size: 1.2vw;
+  font-size: var(--base);
   letter-spacing: .01em;
   display: flex;
 }
@@ -25,8 +27,8 @@ header {
   height: 100vh;
   display: flex;
   flex-direction: column;
-  padding: .5vw;
-  row-gap: .5vw;
+  padding: var(--padding);
+  row-gap: var(--padding);
 }
 
 main {
@@ -72,13 +74,40 @@ img {
   object-fit: cover;
 }
 
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  padding: .5vw;
+}
+
+.container > * {
+  cursor: pointer;
+}
+
+#trick-2 .container {
+  height: 100%;
+}
+
+.container .box {
+  width: 20vw;
+  height: 20vw;
+  border: black solid var(--border);
+  padding: .5vw;
+}
+
 @media (max-width: 888px) {
+  :root {
+    --padding: 2vw;
+  }
+  
   body {
     font-size: 2.2vw;
   }
   header {
     width: 36vw;
-    padding: 1vw;
   }
   main {
     width: 64vw;
