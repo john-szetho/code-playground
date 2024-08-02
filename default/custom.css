@@ -1,6 +1,6 @@
 :root {
   --border: .065vw;
-  --base: 2vw;
+  --base: 1.8vw;
   --padding: 1vw;
 }
 
@@ -87,8 +87,18 @@ img {
   cursor: pointer;
 }
 
-#trick-2 .container {
+#exercise-2 .container {
   height: 100%;
+}
+
+#exercise-4 .container .box {
+  display: flex;
+  justify-content: center;
+  align-items: center
+}
+
+#exercise-7 {
+  padding: var(--padding);
 }
 
 .container .box {

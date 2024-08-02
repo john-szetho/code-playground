@@ -3,11 +3,11 @@
 
 console.log("Hello, world!");
 
-const items = document.querySelectorAll('nav');
+// const items = document.querySelectorAll('nav');
 
-items.forEach((item) => {
-  item.classList.add('draggable');
-});
+// items.forEach((item) => {
+//   item.classList.add('draggable');
+// });
 
 
 /* Draggable script */
@@ -50,10 +50,10 @@ function dragMoveListener (event) {
   var y = (parseFloat(target.getAttribute('data-y')) || 0) + event.dy
 
   // translate the element
-  target.style.transform = 'translate(' + 0 + 'px, ' + y + 'px)'
+  target.style.transform = 'translate(' + x + 'px, ' + y + 'px)'
 
   // update the posiion attributes
-  // target.setAttribute('data-x', x)
+  target.setAttribute('data-x', x)
   target.setAttribute('data-y', y)
 }
 

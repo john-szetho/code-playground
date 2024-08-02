@@ -1,3 +1,7 @@
+body {
+  font-family: 'Arial Bold';
+}
+
 #exercise-1 p:hover {
   color: red;
 }
@@ -5,4 +9,13 @@
 #exercise-3 .box:hover {
   transform: rotate(180deg);
   transition: 2s ease;
+}
+
+#exercise-4 .box:hover {
+  border-radius: 100px;
+  transition: 2s ease;
+}
+
+#exercise-6 .box:hover {
+  cursor: crosshair;
 }
