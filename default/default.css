@@ -123,7 +123,7 @@ html {
 
 body {
   color: black;
-  font-family: 'Arial Narrow';
+  font-family: 'Arial';
   line-height: 108%;
   font-size: var(--base);
   letter-spacing: .01em;
@@ -152,7 +152,10 @@ main {
   display: flex;
   flex-wrap: wrap;
 /*   font-size: calc(var(--base) * .65); */
+}
 
+header:not(.title) {
+  font-family: 'Arial Narrow'
 }
 
 section {
@@ -189,11 +192,18 @@ img {
   object-fit: cover;
 }
 
-li:hover,
 a:hover,
 button:hover {
   opacity: .5;
   cursor: pointer;
+}
+
+.message a {
+  border-bottom: solid var(--border) black;
+}
+
+.title a:hover {
+  opacity: 1;
 }
 
 .container > * {
@@ -202,6 +212,7 @@ button:hover {
 
 .title {
   text-transform: uppercase;
+  font-family: 'Arial Black';
 }
 
 .colour {
@@ -245,7 +256,7 @@ button:hover {
 }
 
 #exercise-3 .box {
-  border-radius: 20px;
+  border-radius: 25px;
 }
 
 #exercise-4 .box {
@@ -258,7 +269,7 @@ button:hover {
 }
 
 #exercise-6 .box:hover {
-  cursor: crosshair;
+  cursor: progress;
 }
 
 @media (max-width: 888px) {
