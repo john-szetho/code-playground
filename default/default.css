@@ -157,6 +157,7 @@ main {
   display: flex;
   flex-wrap: wrap;
 /*   font-size: calc(var(--base) * .65); */
+  padding: 0 var(--padding) var(--padding) 0;
 }
 
 header:not(.title) {
@@ -165,8 +166,8 @@ header:not(.title) {
 
 section {
   height: calc(var(--main-width) / var(--main-columns));
-  width: calc(var(--main-width) / var(--main-columns));
-  padding: var(--padding) var(--padding) 0 var(--padding);
+  width: calc(var(--main-width));
+  padding: var(--padding) 0 0 var(--padding);
 }
 
 ol {
@@ -265,7 +266,7 @@ button:hover {
 }
 
 #exercise-4 .box {
-  border-radius: 500px;
+  border-radius: 1000px;
 }
 
 #exercise-4 .box:hover {
