@@ -111,7 +111,7 @@ meter {
 :root {
   --border: .065vw;
   --border: .1vw;
-  --base: 1.5vw;
+  --base: 1.4vw;
   --padding: 1vw;
 }
 
@@ -188,6 +188,10 @@ img {
   object-fit: cover;
 }
 
+.title {
+  text-transform: uppercase;
+}
+
 .container {
   display: flex;
   justify-content: center;
@@ -242,8 +246,8 @@ img {
 
 @media (max-width: 888px) {
   :root {
-    --padding: 2vw;
-    --base: 2vw;
+    --padding: 1.8vw;
+    --base: 1.8vw;
   }
   header {
     width: 36vw;
