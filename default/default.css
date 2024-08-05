@@ -113,6 +113,8 @@ meter {
   --border: .08vw;
   --base: 1.4vw;
   --padding: 1vw;
+  --header-width: 30vw;
+  --main-width: calc(100vw - var(--header-width));
 }
 
 html {
@@ -134,7 +136,7 @@ header {
   left: 0;
   min-height: 100vh;
   border-right: solid black var(--border);
-  width: 30vw;
+  width: var(--header-width);
   height: 100vh;
   display: flex;
   flex-direction: column;
@@ -146,15 +148,16 @@ main {
   position: absolute;
   top: 0;
   right: 0;
-  width: 70vw;
+  width: var(--main-width);
   display: flex;
   flex-wrap: wrap;
-  
+/*   font-size: calc(var(--base) * .65); */
+
 }
 
 section {
-  height: calc(70vw / 3);
-  width: calc(70vw / 3);
+  height: calc(var(--main-width) / 3);
+  width: calc(var(--main-width) / 3);
   padding: var(--padding);
 }
 
@@ -201,6 +204,10 @@ button:hover {
   text-transform: uppercase;
 }
 
+.colour {
+  background-color: blue;
+}
+
 .container {
   display: flex;
   justify-content: center;
@@ -210,20 +217,14 @@ button:hover {
 }
 
 .box {
-  width: calc((70vw / 3) - (var(--padding) * 2));
-  height: calc((70vw / 3) - (var(--padding) * 2));
+  width: calc((var(--main-width) / 3) - (var(--padding) * 2));
+  height: calc((var(--main-width) / 3) - (var(--padding) * 2));
   border: black solid var(--border);
   padding: var(--padding);
-  transition: all 2s ease;
 }
 
-/* .box.fast {
-  transition: all .5s ease;
-} */
-
-#exercise-1:hover {
-  color: red;
-  transition: all .5s ease;
+#exercise-1 .box:hover {
+  background-color: yellow;
 }
 
 #exercise-2 .box {
@@ -235,18 +236,25 @@ button:hover {
   transition: all .5s ease;
 }
 
-#exercise-3 .box:hover {
-  transform: rotate(180deg);
-}
-
-#exercise-4 .container .box {
+#exercise-3 .box,
+#exercise-4 .box {
   display: flex;
   justify-content: center;
-  align-items: center
+  align-items: center;
+  flex-direction: column;
+}
+
+#exercise-3 .box {
+  border-radius: 20px;
 }
 
 #exercise-4 .box {
-  border-radius: 50px;
+  border-radius: 500px;
+}
+
+#exercise-4 .box:hover {
+  transform: rotate(180deg);
+  transition: all 1.5s ease;
 }
 
 #exercise-6 .box:hover {
@@ -257,11 +265,9 @@ button:hover {
   :root {
     --padding: 1.8vw;
     --base: 1.8vw;
+    --header-width: 36vw;
   }
   header {
-    width: 36vw;
-  }
-  main {
-    width: 64vw;
+    width: var(--header-width);
   }
 }
