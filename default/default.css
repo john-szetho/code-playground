@@ -214,15 +214,20 @@ img {
   height: calc((70vw / 3) - (var(--padding) * 2));
   border: black solid var(--border);
   padding: var(--padding);
+  transition: 1s ease;
 }
 
 #exercise-1:hover {
   color: red;
 }
 
+#exercise-2 .box {
+  transform: blur(20px);
+  transition: 1s ease;
+}
+
 #exercise-3 .box:hover {
   transform: rotate(180deg);
-  transition: 2s ease;
 }
 
 #exercise-4 .container .box {
@@ -231,8 +236,8 @@ img {
   align-items: center
 }
 
-#exercise-4 .box:hover {
-  border-radius: 100px;
+#exercise-4 .box {
+  border-radius: 30px;
   transition: 2s ease;
 }
 
