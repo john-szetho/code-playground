@@ -5,11 +5,14 @@ Welcome to your Code Playground.
 In this workshop, we will be exploring a few simple coding tricks.
 Here is a list of what we will cover:
 
-— Hover states, rotate (css transforms), round corners
-— Custom cursors
-— Keyframe animations
-— Draggable elements
-— Media queries
+- Hover states
+- CSS transitions
+- CSS transforms (rotate, scale, filters)
+- Round corners
+- Custom cursors
+- Keyframe animations
+- Draggable elements
+- Media queries
 
 There is a selection of placeholder images in the `assets` folder to the left, or you can upload and use your own.
 
