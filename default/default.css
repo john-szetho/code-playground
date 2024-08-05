@@ -87,8 +87,24 @@ img {
   cursor: pointer;
 }
 
+.container .box {
+  width: 20vw;
+  height: 20vw;
+  border: black solid var(--border);
+  padding: .5vw;
+}
+
+#exercise-1 p:hover {
+  color: red;
+}
+
 #exercise-2 .container {
   height: 100%;
+}
+
+#exercise-3 .box:hover {
+  transform: rotate(180deg);
+  transition: 2s ease;
 }
 
 #exercise-4 .container .box {
@@ -97,15 +113,17 @@ img {
   align-items: center
 }
 
-#exercise-7 {
-  padding: var(--padding);
+#exercise-4 .box:hover {
+  border-radius: 100px;
+  transition: 2s ease;
 }
 
-.container .box {
-  width: 20vw;
-  height: 20vw;
-  border: black solid var(--border);
-  padding: .5vw;
+#exercise-6 .box:hover {
+  cursor: crosshair;
+}
+
+#exercise-7 {
+  padding: var(--padding);
 }
 
 @media (max-width: 888px) {
