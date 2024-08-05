@@ -153,7 +153,7 @@ main {
 }
 
 section {
-  min-height: calc(100vh / 3);
+  height: calc(70vw / 3);
   width: calc(70vw / 3);
   padding: var(--padding);
 }
@@ -216,7 +216,7 @@ img {
   padding: var(--padding);
 }
 
-#exercise-1 p:hover {
+#exercise-1:hover {
   color: red;
 }
 
