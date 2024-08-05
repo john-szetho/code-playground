@@ -8,112 +8,117 @@
     - The "symbol *" part is to solve Firefox SVG sprite bug
     - The "html" element is excluded, otherwise a bug in Chrome breaks the CSS hyphens property (https://github.com/elad2412/the-new-css-reset/issues/36)
  */
-*:where(:not(html, iframe, canvas, img, svg, video, audio):not(svg *, symbol *)) {
-    all: unset;
-    display: revert;
+*:where(:not(html, iframe, canvas, img, svg, video, audio):not(svg *, symbol
+      *)) {
+  all: unset;
+  display: revert;
 }
 
 /* Preferred box-sizing value */
 *,
 *::before,
 *::after {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 /* Fix mobile Safari increase font-size on landscape mode */
 html {
-    -moz-text-size-adjust: none;
-    -webkit-text-size-adjust: none;
-    text-size-adjust: none;
+  -moz-text-size-adjust: none;
+  -webkit-text-size-adjust: none;
+  text-size-adjust: none;
 }
 
 /* Reapply the pointer cursor for anchor tags */
-a, button {
-    cursor: revert;
+a,
+button {
+  cursor: revert;
 }
 
 /* Remove list styles (bullets/numbers) */
-ol, ul, menu, summary {
-    list-style: none;
+ol,
+ul,
+menu,
+summary {
+  list-style: none;
 }
 
 /* For images to not be able to exceed their container */
 img {
-    max-inline-size: 100%;
-    max-block-size: 100%;
+  max-inline-size: 100%;
+  max-block-size: 100%;
 }
 
 /* removes spacing between cells in tables */
 table {
-    border-collapse: collapse;
+  border-collapse: collapse;
 }
 
 /* Safari - solving issue when using user-select:none on the <body> text input doesn't working */
-input, textarea {
-    -webkit-user-select: auto;
+input,
+textarea {
+  -webkit-user-select: auto;
 }
 
 /* revert the 'white-space' property for textarea elements on Safari */
 textarea {
-    white-space: revert;
+  white-space: revert;
 }
 
 /* minimum style to allow to style meter element */
 meter {
-    -webkit-appearance: revert;
-    appearance: revert;
+  -webkit-appearance: revert;
+  appearance: revert;
 }
 
 /* preformatted text - use only for this feature */
 :where(pre) {
-    all: revert;
-    box-sizing: border-box;
+  all: revert;
+  box-sizing: border-box;
 }
 
 /* reset default text opacity of input placeholder */
 ::placeholder {
-    color: unset;
+  color: unset;
 }
 
 /* fix the feature of 'hidden' attribute.
    display:revert; revert to element instead of attribute */
 :where([hidden]) {
-    display: none;
+  display: none;
 }
 
 /* revert for bug in Chromium browsers
    - fix for the content editable attribute will work properly.
    - webkit-user-select: auto; added for Safari in case of using user-select:none on wrapper element*/
 :where([contenteditable]:not([contenteditable="false"])) {
-    -moz-user-modify: read-write;
-    -webkit-user-modify: read-write;
-    overflow-wrap: break-word;
-    -webkit-line-break: after-white-space;
-    -webkit-user-select: auto;
+  -moz-user-modify: read-write;
+  -webkit-user-modify: read-write;
+  overflow-wrap: break-word;
+  -webkit-line-break: after-white-space;
+  -webkit-user-select: auto;
 }
 
 /* apply back the draggable feature - exist only in Chromium and Safari */
 :where([draggable="true"]) {
-    -webkit-user-drag: element;
+  -webkit-user-drag: element;
 }
 
 /* Revert Modal native behavior */
 :where(dialog:modal) {
-    all: revert;
-    box-sizing: border-box;
+  all: revert;
+  box-sizing: border-box;
 }
 
 /* Remove details summary webkit styles */
 ::-webkit-details-marker {
-    display: none;
+  display: none;
 }
-
 
 /* default styles start here */
 
 :root {
-/*   --border: .065vw; */
-  --border: .08vw;
+  /*   --border: .065vw; */
+  --border: 0.08vw;
   --base: 1.4vw;
   --padding: 1vw;
   --header-width: 30vw;
@@ -128,10 +133,10 @@ html {
 
 body {
   color: black;
-  font-family: 'Arial';
+  font-family: "Arial";
   line-height: 108%;
   font-size: var(--base);
-  letter-spacing: .01em;
+  letter-spacing: 0.01em;
   display: flex;
 }
 
@@ -156,40 +161,40 @@ main {
   width: var(--main-width);
   display: flex;
   flex-wrap: wrap;
-/*   font-size: calc(var(--base) * .65); */
+  /*   font-size: calc(var(--base) * .65); */
   padding: 0 var(--padding) var(--padding) 0;
 }
 
 header:not(.title) {
-  font-family: 'Arial Narrow'
+  font-family: "Arial Narrow";
 }
 
 section {
-  height: calc(var(--main-width) / var(--main-columns));
-  width: calc(var(--main-width));
+  height: calc((var(--main-width) - var(--padding)) / var(--main-columns));
+  width: calc((var(--main-width) - var(--padding)) / var(--main-columns));
   padding: var(--padding) 0 0 var(--padding);
 }
 
 ol {
-   list-style: none;
-   counter-reset: item;
- }
+  list-style: none;
+  counter-reset: item;
+}
 
 ol li {
- counter-increment: item;
+  counter-increment: item;
 }
 
 ol li:before {
- margin-right: .2em;
- content: counter(item);
- border-radius: 100%;
- border: black solid calc((var(--border) / .88) * 1.12);
- color: black;
- width: 1.2em;
- height: 1.2em;
- text-align: center;
- display: inline-block;
- transform: scale(.88);
+  margin-right: 0.2em;
+  content: counter(item);
+  border-radius: 100%;
+  border: black solid calc((var(--border) / 0.88) * 1.12);
+  color: black;
+  width: 1.2em;
+  height: 1.2em;
+  text-align: center;
+  display: inline-block;
+  transform: scale(0.88);
 }
 
 img {
@@ -200,7 +205,7 @@ img {
 
 a:hover,
 button:hover {
-  opacity: .5;
+  opacity: 0.5;
   cursor: pointer;
 }
 
@@ -218,7 +223,7 @@ button:hover {
 
 .title {
   text-transform: uppercase;
-  font-family: 'Arial Black';
+  font-family: "Arial Black";
 }
 
 .colour {
@@ -250,7 +255,7 @@ button:hover {
 
 #exercise-2 .box:hover p {
   filter: blur(10px);
-  transition: all .5s ease;
+  transition: all 0.5s ease;
 }
 
 #exercise-3 .box,
@@ -265,8 +270,13 @@ button:hover {
   border-radius: 25px;
 }
 
+#exercise-3 .box:hover {
+  border-radius: 100%;
+  transition: all 1.5s ease;
+}
+
 #exercise-4 .box {
-  border-radius: 1000px;
+  border-radius: 100%;
 }
 
 #exercise-4 .box:hover {
@@ -284,6 +294,17 @@ button:hover {
     --base: 1.8vw;
     --header-width: 36vw;
     --main-columns: 2;
+  }
+  header {
+    width: var(--header-width);
+  }
+}
+@media (max-width: 480px) {
+  :root {
+    --padding: 3vw;
+    --base: 3vw;
+    --header-width: 44vw;
+    --main-columns: 1;
   }
   header {
     width: var(--header-width);
