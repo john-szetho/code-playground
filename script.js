@@ -1,6 +1,11 @@
 // back button
-const backButtons = document.querySelectorAll('back');
+const backButtons = document.querySelectorAll('.back');
 
-backButtons
+backButtons.forEach((button) => {
+  button.addEventListener('click', () => {
+    history.back()
+    console.log('go back')
+  })
+})
 
 // add your own custom scripts here

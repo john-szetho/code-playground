@@ -1,19 +1,23 @@
+<!-- default doctype and meta info dw about this stuff -->
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>RMIT Code Playground</title>
-    <link rel="stylesheet" href="/default/reset.css" />
+    <title>Code Playground</title>
+    
+    <!-- links to your css files -->
     <link rel="stylesheet" href="/default/default.css" />
     <link rel="stylesheet" href="/styles.css" />
   </head>
   
+  <!-- code playground starts here -->
   <body>
     <header>
       <div class="site-title">
-        <a href="#">RMIT Code Playground</a>
+        <button class="back">Code Playground</button>
       </div>
+
       <nav>
-        <ol>
+        <ul>
           <li><a href="#exercise-1">Hover states</a></li>
           <li><a href="#exercise-2">Image/video</a></li>
           <li><a href="#exercise-3">Rotate (css transforms)</a></li>
@@ -22,9 +26,11 @@
           <li><a href="#exercise-6">Custom cursors</a></li>          
           <li><a href="#exercise-7">Draggable elements</a></li>
           <li><a href="#exercise-8">Media queries</a></li>
-        </ol>
+        </ul>
       </nav>
     </header>
+    
+    <!-- main playground -->
     <main>
       <section id="exercise-1">
         <div class="container">
@@ -78,6 +84,7 @@
       </section>
     </main>
   </body>
-  <script src="https://cdn.jsdelivr.net/npm/interactjs/dist/interact.min.js"></script>
+  
+  <!-- link to script file -->
   <script src="/script.js"></script>
 </html>
