@@ -47,11 +47,11 @@ ol {
    counter-reset: item;
  }
 
-li {
+ol li {
  counter-increment: item;
 }
 
-li:before {
+ol li:before {
  margin-right: .2em;
  content: counter(item);
  border-radius: 100%;
