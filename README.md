@@ -8,12 +8,12 @@
 
 Housekeeping:
 
-← `README.html`: This is the main HTML page for your website.
+← `README.md`: The is file you are currently reading ;)
 
-← `index.html`: This is the main HTML page for your website.
+← `index.html`: This is the main HTML page for structuring your website and its contents.
 
-← `styles.css`: CSS files add styling rules to your content.
+← `styles.css`: This is your CSS file to add styling rules.
 
-← `script.js`: If you're feeling fancy you can add interactivity to your site with JavaScript.
+← `script.js`: You can add your own custom scripts here.
 
 -----
