@@ -172,6 +172,10 @@ button:hover {
     --header-width: 36vw;
     --main-columns: 2;
   }
+  
+  #exercise-8 .box {
+    background-color: red;
+  }
 }
 
 @media (max-width: 480px) {
@@ -180,5 +184,8 @@ button:hover {
     --base: 3vw;
     --header-width: 44vw;
     --main-columns: 1;
+  }
+    #exercise-8 .box {
+    background-color: darkred;
   }
 }

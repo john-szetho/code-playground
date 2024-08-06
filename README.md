@@ -31,7 +31,7 @@ Step 8:
 Have a go at implementing a script to change the background colour of the box on click.
 
 Step 9:
-If you made it this far, nice job (!!!). Ask me for more tasks.
+If you made it this far, nice job!! Feel free to ask for more steps/direction
 
 -----
 
