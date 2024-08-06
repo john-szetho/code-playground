@@ -2,27 +2,27 @@
 
 🔮🔮🔮
 
-"Simple things are often overlooked in programming because there is much to explore. However, the possibilities of simple things are usually far from exhausted."
+"Simple things are often overlooked in programming because there is so much to explore. However, the possibilities of simple things are usually far from exhausted."
 
 -----
 
 Step 1:
-Make a copy of the source files by clicking "Remix" on the right-side of the header.
+Make a copy of the source files by clicking "Remix" in the header.
 
 Step 2:
-Open the `index.html` file from the navigation panel on the left and have a look around.
+Open the `index.html` file from the navigation panel and have a look around.
 
 Step 3:
-Copy and paste the `section` element to create new box elements.
+Copy and paste the `section` element to create new boxes.
 
 Step 4:
-Have a go at using hover states on the boxes. Be sure to reference the Simple Tricks section of the presentaiton.
+Change the text of a box and apply a custom hover state. Refetence the Simple Tricks section of the presentaiton as needed.
 
 Step 5:
-Have a go at implementing CSS transform effects, such as rotate, scale, translate.
+Change the text of a box and apply a CSS transform effect, such as rotate, scale, or translate.
 
 Step 6:
-Have a go at uploading your own image to `Files` from the navigation panel on the left, then display it in the box element using an `<img>` tag.
+Upload your own image to `Files` from the navigation panel on the left, then display it in the box element using an `<img>` tag.
 
 Step 7:
 Have a go at implementing a media query that changes the style of a box for smaller screen sizes.
@@ -35,7 +35,7 @@ If you made it this far, nice job (!!!). Ask me for more tasks.
 
 -----
 
-Housekeeping:
+Files:
 
 ← `README.md`: The file you are currently reading ;)
 
