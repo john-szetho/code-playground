@@ -1,18 +1,2 @@
 /* your styles here */
 
-body {
-
-}
-
-#exercise-1 .box:hover {
-  background-color: blue;
-  transform: scale(.5);
-}
-
-.box {
-  background-color: yellow;
-}
-
-.box:hover {
-  transform: rotate(180deg);
-}

@@ -165,8 +165,9 @@ button:hover {
   cursor: progress;
 }
 
-#exercise07 .box:hover {
-  transform: scale(1.5);
+#exercise-7 .box:hover {
+  transform: scale(.75);
+  transition: all 1.5s ease;
 }
 
 @media (max-width: 888px) {
