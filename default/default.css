@@ -165,6 +165,10 @@ button:hover {
   cursor: progress;
 }
 
+#exercise07 .box:hover {
+  transform: scale(1.5);
+}
+
 @media (max-width: 888px) {
   :root {
     --padding: 1.8vw;
