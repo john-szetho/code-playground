@@ -12,3 +12,7 @@ body {
 .box {
   background-color: yellow;
 }
+
+.box:hover {
+  transform: rotate(180deg);
+}
