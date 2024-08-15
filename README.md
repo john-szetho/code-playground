@@ -16,10 +16,10 @@ Step 3:
 Copy and paste the `section` element to create new boxes.
 
 Step 4:
-Change the text of a box and apply a custom hover state. Refetence the Simple Tricks section of the presentaiton as needed.
+Apply a custom hover state. Refetence the Simple Tricks section of the presentaiton as needed.
 
 Step 5:
-Change the text of a box and apply a CSS transform effect, such as rotate, scale, or translate.
+Apply a CSS transform effect, such as rotate, scale, or translate.
 
 Step 6:
 Upload your own image to `Files` from the navigation panel on the left, then display it in the box element using an `<img>` tag.

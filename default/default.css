@@ -126,46 +126,46 @@ button:hover {
   padding: var(--padding);
 }
 
-#exercise-1 .box:hover {
+#example-1 .box:hover {
   background-color: yellow;
 }
 
-#exercise-2 .box:hover p {
+#example-2 .box:hover p {
   filter: blur(10px);
   transition: all 0.5s ease;
 }
 
-#exercise-3 .box,
-#exercise-4 .box {
+#example-3 .box,
+#example-4 .box {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
 }
 
-#exercise-3 .box {
+#example-3 .box {
   border-radius: 25px;
 }
 
-#exercise-3 .box:hover {
+#example-3 .box:hover {
   border-radius: 100%;
   transition: all 1.5s ease;
 }
 
-#exercise-4 .box {
+#example-4 .box {
   border-radius: 100%;
 }
 
-#exercise-4 .box:hover {
+#example-4 .box:hover {
   transform: rotate(180deg);
   transition: all 1.5s ease;
 }
 
-#exercise-6 .box:hover {
+#example-6 .box:hover {
   cursor: progress;
 }
 
-#exercise-7 .box:hover {
+#example-7 .box:hover {
   transform: scale(.75);
   transition: all 1.5s ease;
 }
@@ -178,7 +178,7 @@ button:hover {
     --main-columns: 2;
   }
   
-  #exercise-8 .box {
+  #example-8 .box {
     background-color: red;
   }
 }
@@ -190,7 +190,7 @@ button:hover {
     --header-width: 44vw;
     --main-columns: 1;
   }
-    #exercise-8 .box {
+    #example-8 .box {
     background-color: darkred;
   }
 }
