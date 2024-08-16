@@ -126,6 +126,10 @@ button:hover {
   padding: var(--padding);
 }
 
+.focus {
+  transform: scale(1.5);
+}
+
 #example-1 .box:hover {
   background-color: yellow;
 }

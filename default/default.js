@@ -16,3 +16,24 @@ colourButton.addEventListener('click', () => {
   console.log('change colour');
   colourButton.classList.toggle("colour");
 });
+
+
+// example hover states
+const navItems = document.querySelectorAll('nav ul li');
+
+navItems.forEach(item => {
+  const targetId = item.getAttribute('data-target');
+  const target = document.querySelector(targetId);
+  
+  item.addEventListener('mouseover', () => {    
+    if (target) {
+      target.classList.add('focus');
+    }
+  });
+  
+  item.addEventLister('mouseleave', () => {
+    if (target) {
+      target.classList.remove('focus');
+    }
+  })
+});
