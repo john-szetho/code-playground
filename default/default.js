@@ -21,19 +21,22 @@ colourButton.addEventListener('click', () => {
 // example hover states
 const navItems = document.querySelectorAll('nav ul li');
 
-navItems.forEach(item => {
-  const targetId = item.getAttribute('data-target');
-  const target = document.querySelector(targetId);
-  
+navItems.forEach(item => { 
   item.addEventListener('mouseover', () => {    
+    const targetId = item.getAttribute('data-target');
+    const target = document.querySelector(targetId);
+    
     if (target) {
       target.classList.add('focus');
     }
   });
   
-  item.addEventLister('mouseleave', () => {
+  item.addEventListener('mouseout', () => {
+    const targetId = item.getAttribute('data-target');
+    const target = document.querySelector(targetId);
+    
     if (target) {
       target.classList.remove('focus');
     }
-  })
+  });
 });
