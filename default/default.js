@@ -28,7 +28,8 @@ navItems.forEach(item => {
     
     if (target) {
       target.classList.add('focus');
-    }
+      target.parentNode.classList.add('hover');
+    };
   });
   
   item.addEventListener('mouseout', () => {
@@ -37,6 +38,7 @@ navItems.forEach(item => {
     
     if (target) {
       target.classList.remove('focus');
-    }
+      target.parentNode.classList.remove('hover');
+    };
   });
 });

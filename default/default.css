@@ -126,8 +126,15 @@ button:hover {
   padding: var(--padding);
 }
 
-.focus {
-  transform: scale(1.5);
+main.hover section {
+  opacity: .5;
+  filter: blur(20px);
+}
+
+section.focus {
+  opacity: 1;
+  transform: scale(1.05);
+  transition: all 0.5s ease;
 }
 
 #example-1 .box:hover {
