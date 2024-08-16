@@ -127,14 +127,13 @@ button:hover {
 }
 
 main.hover section {
-  opacity: .5;
-  filter: blur(20px);
+  opacity: 0.5;
+  filter: blur(5px);
 }
 
-section.focus {
+main section.focus {
   opacity: 1;
-  transform: scale(1.05);
-  transition: all 0.5s ease;
+  filter: blur(0);
 }
 
 #example-1 .box:hover {
