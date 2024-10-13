@@ -31,18 +31,18 @@ Step 8:
 Have a go at implementing a script to change the background colour of the box on click.
 
 Step 9:
-If you made it this far, nice job!! This is the basics of coding websites.
+If you made it this far, nice job! This is the basics of coding websites.
 
 -----
 
 Files:
 
-← `README.md`: This file :)
+← `README.md`: You are here now.
 
-← `index.html`: This is the main HTML page for structuring your website and its contents.
+← `index.html`: The main HTML page for structuring your website and content.
 
-← `styles.css`: This is your CSS file to add styling rules.
+← `styles.css`: The CSS file to add styling rules.
 
-← `script.js`: You can add your own custom scripts here.
+← `script.js`: Add your own custom scripts here (advanced).
 
 -----
