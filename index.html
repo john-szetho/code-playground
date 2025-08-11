@@ -5,9 +5,22 @@
       <title>Code Playground</title>
 
       <!-- links to your css files -->
-      <link rel="stylesheet" href="./default/reset.css?=v1.1" />
-      <link rel="stylesheet" href="./default/default.css?=v1.1" />
-      <link rel="stylesheet" href="./styles.css?=v1.1" />
+      <link rel="stylesheet" href="./default/reset.css" />
+      <link rel="stylesheet" href="./default/default.css" />
+      <link rel="stylesheet" href="./styles.css" />
+
+      <!-- Auto-versioning script -->
+      <script>
+         // Add timestamp to all CSS and JS files for cache busting
+         (function () {
+            const timestamp = new Date().getTime();
+            document
+               .querySelectorAll('link[rel="stylesheet"]')
+               .forEach((link) => {
+                  link.href += "?v=" + timestamp;
+               });
+         })();
+      </script>
    </head>
 
    <!-- code playground starts here -->
@@ -47,5 +60,13 @@
    </body>
 
    <!-- link to script file -->
-   <script src="./script.js?=v1.1"></script>
+   <script>
+      // Auto-version the main script file
+      (function () {
+         const timestamp = new Date().getTime();
+         const script = document.createElement("script");
+         script.src = "./script.js?v=" + timestamp;
+         document.head.appendChild(script);
+      })();
+   </script>
 </html>
