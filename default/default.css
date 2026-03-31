@@ -89,7 +89,7 @@ button:hover {
   cursor: pointer;
 }
 
-nav a {
+.home-examples a {
   border-bottom: solid var(--border) black;
 }
 
