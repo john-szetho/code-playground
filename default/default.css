@@ -46,7 +46,7 @@ main {
 }
 
 header:not(.title) {
-  font-family: 'Arial Narrow', Arial, sans-serif;
+  font-family: "Arial Narrow", Arial, sans-serif;
 }
 
 section {
@@ -68,7 +68,7 @@ ol li:before {
   margin-right: 0.2em;
   content: counter(item);
   border-radius: 100%;
-  border: black solid 0.1vw;  /* Simplified border width */
+  border: black solid 0.1vw; /* Simplified border width */
   color: black;
   width: 1.2em;
   height: 1.2em;
@@ -89,7 +89,7 @@ button:hover {
   cursor: pointer;
 }
 
-.message a {
+a {
   border-bottom: solid var(--border) black;
 }
 
@@ -103,7 +103,7 @@ button:hover {
 
 .title {
   text-transform: uppercase;
-  font-family: 'Arial Black', 'Arial Bold', sans-serif;
+  font-family: "Arial Black", "Arial Bold", sans-serif;
   font-weight: 800;
 }
 
@@ -176,7 +176,7 @@ main section.focus {
 }
 
 #example-7 .box:hover {
-  transform: scale(.75);
+  transform: scale(0.75);
   transition: all 1.5s ease;
 }
 
@@ -187,7 +187,7 @@ main section.focus {
     --header-width: 36vw;
     --main-columns: 2;
   }
-  
+
   #example-8 .box {
     background-color: red;
   }
@@ -200,7 +200,7 @@ main section.focus {
     --header-width: 44vw;
     --main-columns: 1;
   }
-    #example-8 .box {
+  #example-8 .box {
     background-color: darkred;
   }
 }

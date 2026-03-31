@@ -1,72 +1,70 @@
 <!-- default doctype and meta info dw about this stuff -->
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-   <head>
-      <title>Code Playground</title>
+  <head>
+    <title>Code Playground</title>
 
-      <!-- links to your css files -->
-      <link rel="stylesheet" href="./default/reset.css" />
-      <link rel="stylesheet" href="./default/default.css" />
-      <link rel="stylesheet" href="./styles.css" />
+    <!-- links to your css files -->
+    <link rel="stylesheet" href="./default/reset.css" />
+    <link rel="stylesheet" href="./default/default.css" />
+    <link rel="stylesheet" href="./styles.css" />
 
-      <!-- Auto-versioning script -->
-      <script>
-         // Add timestamp to all CSS and JS files for cache busting
-         (function () {
-            const timestamp = new Date().getTime();
-            document
-               .querySelectorAll('link[rel="stylesheet"]')
-               .forEach((link) => {
-                  link.href += "?v=" + timestamp;
-               });
-         })();
-      </script>
-   </head>
+    <!-- Auto-versioning script -->
+    <script>
+      // Add timestamp to all CSS and JS files for cache busting
+      (function () {
+        const timestamp = new Date().getTime();
+        document.querySelectorAll('link[rel="stylesheet"]').forEach((link) => {
+          link.href += "?v=" + timestamp;
+        });
+      })();
+    </script>
+  </head>
 
-   <!-- code playground starts here -->
-   <body>
-      <header>
-         <div class="title">
-            <a href="./">Code Playground</a>
-         </div>
+  <!-- code playground starts here -->
+  <body>
+    <header>
+      <div class="title">
+        <a href="./">Code Playground</a>
+      </div>
 
-         <div class="message">
-            <p>
-               Try out some simple tricks from the
-               <a
+      <div class="message">
+        <p>
+          Try out some simple tricks from the
+          <!-- <a
                   href="https://www.figma.com/proto/g0d7e7801BO5cxCvqo2WXu/RMIT-Fashion-Communications_2025-03-27?node-id=15797-93&t=zZgU8Jv4haq3VpWS-1"
                   target="_blank"
-                  >presentation</a
-               >. Don't be afraid to break the code.
-            </p>
-         </div>
+                  >presentation</a -->
+          >. Don't be afraid to break the code.
+        </p>
+      </div>
 
-         <nav>
-            <ul>
-               <li><a href="./examples">Examples</a></li>
-            </ul>
-         </nav>
-      </header>
+      <nav>
+        <ul>
+          <li><a href="./examples">Examples</a></li>
+        </ul>
+      </nav>
+    </header>
 
-      <!-- main playground -->
-      <main>
-         <!-- duplicate the box by copy and pasting the 'section' element with the 'box' class below -->
-         <section>
-            <div class="box">
-               <p>Try editing this text</p>
-            </div>
-         </section>
-      </main>
-   </body>
+    <!-- main playground -->
+    <main>
+      <!-- duplicate the box by copy and pasting the 'section' element with the 'box' class below -->
+      <section>
+        <div class="box">
+          <p>Try editing this text</p>
+        </div>
+      </section>
+    </main>
+  </body>
 
-   <!-- link to script file -->
-   <script>
-      // Auto-version the main script file
-      (function () {
-         const timestamp = new Date().getTime();
-         const script = document.createElement("script");
-         script.src = "./script.js?v=" + timestamp;
-         document.head.appendChild(script);
-      })();
-   </script>
+  <!-- link to script file -->
+  <script>
+    // Auto-version the main script file
+    (function () {
+      const timestamp = new Date().getTime();
+      const script = document.createElement("script");
+      script.src = "./script.js?v=" + timestamp;
+      document.head.appendChild(script);
+    })();
+  </script>
 </html>
